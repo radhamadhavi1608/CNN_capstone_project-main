@@ -210,6 +210,6 @@ class predict_class_image():
                             )
         # Display the picture
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        plt.imsave('D:\\GreatLearning\\Flask\\OBJECT_DETECTION_CAR\\static\\images\\predictedSample_123.jpg', img)
+        plt.imsave('C:\\Users\\radha\\GL-Workspace\\Capstone-1\\CNN_capstone_project-main\\static\\images\\predictedSample_123.jpg', img)
         return (act_class, pred_class)
 

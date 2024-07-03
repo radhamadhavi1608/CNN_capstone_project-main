@@ -63,7 +63,7 @@ class model_train():
                                           img_size=img_size)  # batchsize can be changed
         # test_generator = batch_generator(val_df, batch_size=batchsize)
 
-        checkpoint_filepath = 'D:\\Temp\\CapstoneProject\\tempCSV\\checkpoint'
+        checkpoint_filepath = 'C:\\Users\\radha\\GL-Workspace\\Capstone-1\\CNN_capstone_project-main\\Temp\\CapstoneProject\\tempCSV\\checkpoint'
         model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint(
             filepath=checkpoint_filepath,
             save_weights_only=True,

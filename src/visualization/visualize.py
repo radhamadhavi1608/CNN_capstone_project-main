@@ -67,7 +67,7 @@ class eda_dataset():
         plt.bar(carModel, carCounts)
 
         plt.plot([1, 2])
-        plt.savefig('D:\\GreatLearning\\Flask\\OBJECT_DETECTION_CAR\\static\\images\\carModelYearCount.jpg')
+        plt.savefig('C:\\Users\\radha\\GL-Workspace\\Capstone-1\\CNN_capstone_project-main\\static\\images\\carModelYearCount.jpg')
 
     def image_allignment(train_df):
         train_df['Width_difference'] = train_df['Width'] - (train_df['xmax'] - train_df['xmin'])
@@ -77,7 +77,7 @@ class eda_dataset():
                        1000])
 
         # Show plot
-        plt.savefig('D:\\GreatLearning\\Flask\\OBJECT_DETECTION_CAR\\static\\images\\CheckCarLocationinImage.jpg')
+        plt.savefig('C:\\Users\\radha\\GL-Workspace\\Capstone-1\\CNN_capstone_project-main\\static\\images\\CheckCarLocationinImage.jpg')
 
     def sample_image_display(train_df):
         # Pickup a random image number
@@ -101,6 +101,6 @@ class eda_dataset():
         # Draw image using matplotlib
         plt.suptitle(train_df.loc[img_num, 'carModel_1'])
         # plt.savefig('D:\\GreatLearning\\Flask\\OBJECT_DETECTION_CAR\\static\\images\\sampleImageWithBoudingBox.jpg')
-        plt.imsave('D:\\GreatLearning\\Flask\\OBJECT_DETECTION_CAR\\static\\images\\sampleImageWithBoudingBox.jpg', img)
+        plt.imsave('C:\\Users\\radha\\GL-Workspace\\Capstone-1\\CNN_capstone_project-main\\static\\images\\sampleImageWithBoudingBox.jpg', img)
 
 

@@ -20,7 +20,7 @@ class make_annotation_dataframe():
         label_encoder = preprocessing.LabelEncoder()
         train_df['le_carName'] = label_encoder.fit_transform(train_df['carName'])
 
-        dfTrain_W_H = pd.read_csv("D:\\GreatLearning\\Flask\\OBJECT_DETECTION_CAR\\files\\train_8144_images.csv")
+        dfTrain_W_H = pd.read_csv("C:\\Users\\radha\\GL-Workspace\\Capstone-1\\CNN_capstone_project-main\\files\\train_8144_images.csv")
         dfTrain_W_H = dfTrain_W_H[['Height', 'Width', 'Image_Name']]
         train_df = train_df.merge(dfTrain_W_H, how='inner', left_on='imageName', right_on='Image_Name')
 
